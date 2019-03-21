@@ -11,22 +11,9 @@ const history = createBrowserHistory();
 
 
 
-const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
-const store = createStore(
-  connectRouter(history)(rootReducer),
-  composeEnhancer(
-    applyMiddleware(
-      routerMiddleware(history),
-      thunkMiddleware,
-    ),
-  ),
-)
-
 
 ReactDOM.render(
-  <Provider store={store}>
-        <App/>
-  </Provider>,
+        <App/>,
   document.getElementById("root")
 )
 // registerServiceWorker();

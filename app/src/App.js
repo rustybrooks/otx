@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 import './App.css'
-import { Route, Switch } from 'react-router' // react-router v4
-import { withRouter } from 'react-router'
 import CssBaseline from '@material-ui/core/CssBaseline';
 
 import Home from './components/Home'
@@ -19,29 +17,21 @@ class NoMatch extends Component {
 
 class App extends Component {
   componentDidMount() {
-    this.props.fetchFrameworkEndpoints()
+//    this.props.fetchFrameworkEndpoints()
   }
 
   render() {
-    if (!this.props.frameworks) {
-      return (
-        <div className="App">Loading app...</div>
-      )
-    }
+//    if (!this.props.frameworks) {
+//      return (
+//        <div className="App">Loading app...</div>
+//      )
+//    }
 
     return (
-      <React.Fragment>
-        <CssBaseline />
-        <div className="App">
-
-          <Switch>
-            <Route exact path="/" component={Home} />
-          </Switch>
-        </div>
-      </React.Fragment>
+        <Home/>
     );
   }
 }
 
 
-export default withRouter(App)
+export default App

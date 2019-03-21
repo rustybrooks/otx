@@ -3,9 +3,10 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import { withStyles } from '@material-ui/core/styles';
 
+const styles = {}
+
 class Home extends React.Component {
   componentDidMount() {
-//    this.props.dispatch(this.props.frameworks.PlayerApi.squad({'squad_name': 'Flannelcat'}))
   }
 
   render() {
@@ -19,4 +20,5 @@ class Home extends React.Component {
   }
 }
 
-export default withtyles(styles)(Home)
+
+export default withStyles(styles)(Home)
