@@ -6,8 +6,8 @@ RUN apt-get -y update \
  && apt-get install -y nodejs
 
 COPY . /srv/src
-WORKDIR /srv/src/ui/app
+WORKDIR /srv/src/app
 RUN npm install
 RUN npm run build
 
-ENTRYPOINT /srv/src/ui/entrypoint.sh
+ENTRYPOINT /srv/src/entrypoint.sh

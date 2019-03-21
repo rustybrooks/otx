@@ -5,7 +5,7 @@ import { withStyles } from '@material-ui/core/styles';
 
 class Home extends React.Component {
   componentDidMount() {
-#    this.props.dispatch(this.props.frameworks.PlayerApi.squad({'squad_name': 'Flannelcat'}))
+//    this.props.dispatch(this.props.frameworks.PlayerApi.squad({'squad_name': 'Flannelcat'}))
   }
 
   render() {
@@ -19,4 +19,4 @@ class Home extends React.Component {
   }
 }
 
-export default withtyles(styles)(Home))
+export default withtyles(styles)(Home)

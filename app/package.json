@@ -6,9 +6,6 @@
   "dependencies": {
     "@material-ui/core": "^1.4.0",
     "@material-ui/icons": "^1.1.0",
-    "babel-preset-es2016": "^6.24.1",
-    "babel-preset-stage-3": "^6.24.1",
-    "connected-react-router": "^4.3.0",
     "extract-text-webpack-plugin": "^3.0.2",
     "history": "^4.7.2",
     "moment": "^2.22.2",

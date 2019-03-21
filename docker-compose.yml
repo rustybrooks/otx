@@ -8,8 +8,7 @@ services:
     image: otx-ui:latest
     container_name: otx-buildui
     volumes:
-      - ./data/:/srv/data
-      - ./src/:/srv/src
+      - ./:/srv/src
     environment:
       - ENVIRONMENT=dev
     ports:

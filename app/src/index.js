@@ -1,10 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import { ConnectedRouter } from 'connected-react-router'
 
 import { createBrowserHistory } from 'history'
-import { connectRouter, routerMiddleware } from 'connected-react-router'
 
 import App from './App'
 
@@ -27,10 +25,7 @@ const store = createStore(
 
 ReactDOM.render(
   <Provider store={store}>
-    {/* ConnectedRouter will use the store from Provider automatically */}
-    <ConnectedRouter history={history}>
         <App/>
-    </ConnectedRouter>
   </Provider>,
   document.getElementById("root")
 )
