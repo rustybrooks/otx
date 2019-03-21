@@ -1,0 +1,17 @@
+version: '2'
+
+services:
+  otx-buildui:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: otx-ui:latest
+    container_name: otx-buildui
+    volumes:
+      - ./data/:/srv/data
+      - ./src/:/srv/src
+    environment:
+      - ENVIRONMENT=dev
+    ports:
+        - 3000:3000
+
